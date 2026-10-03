@@ -16,17 +16,19 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up JDK 17
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: '17'
 
       - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@v4
+        with:
+          packages: ''
 
-      - name: Install Android SDK 36 and 37
+      - name: Install Android SDK Platform 37
         run: |
-          sdkmanager "platforms;android-36" "platforms;android-37" "build-tools;35.0.0"
+          yes | sdkmanager "platforms;android-37.0"
 
       - name: Make Gradle executable
         run: chmod +x ./gradlew
