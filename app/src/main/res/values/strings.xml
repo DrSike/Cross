@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Cross</string>
+    <string name="notification_listener_label">Cross notification bridge</string>
+    <string name="notification_listener_description">Sends selected phone notifications to your private Apple Watch companion.</string>
+    <string name="find_phone_channel_name">Find phone</string>
+    <string name="find_phone_channel_description">Alert shown while your Apple Watch is looking for this phone.</string>
+    <string name="find_phone_notification_title">Find phone</string>
+    <string name="find_phone_notification_text">Your Apple Watch is looking for this phone.</string>
+    <string name="find_phone_stop_action">Stop ringing</string>
+    <string name="ble_service_channel_name">Cross connection</string>
+    <string name="ble_service_channel_description">Keeps the Cross Apple Watch connection available in the background.</string>
+    <string name="ble_service_notification_title">Cross Apple Watch connection</string>
+    <string name="ble_service_connected">Connected to Apple Watch</string>
+    <string name="ble_service_advertising">Waiting for Apple Watch</string>
+    <string name="ble_service_starting">Starting Bluetooth transport</string>
+    <string name="ble_service_error">Bluetooth needs attention</string>
+    <string name="ble_service_stopped">Transport is off</string>
+</resources>
